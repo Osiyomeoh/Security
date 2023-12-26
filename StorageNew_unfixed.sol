@@ -16,7 +16,7 @@ contract StorageVictim {
     }
 
     function store(uint256 _amount) public {
-        // In Solidity 0.8.x, you need to specify the data location for memory variables
+       
         Storage memory str;
 
         str.user = msg.sender;

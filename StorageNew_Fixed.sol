@@ -2,7 +2,7 @@
 pragma solidity 0.8.18; // 
 
 contract StorageVictim {
-    address immutable owner; // Declare 'owner' as immutable
+    address immutable owner;
 
     struct Storage {
         address user;
@@ -15,8 +15,8 @@ contract StorageVictim {
         owner = msg.sender;
     }
 
-    function store(uint256 amount) public { // Rename '_amount' to 'amount'
-        // Explicitly initialize the struct instance
+    function store(uint256 amount) public { 
+        
         Storage memory str = Storage({
             user: msg.sender,
             amount: amount
